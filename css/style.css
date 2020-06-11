@@ -25,6 +25,7 @@ ol {
 .navauto {
     background: #fff;
     animation: navbg .5s;
+    box-shadow: 0 17px 35px rgba(74, 74, 115, .1), 0 5px 15px rgba(0, 0, 0, .03);
 }
 
 @keyframes navbg {
