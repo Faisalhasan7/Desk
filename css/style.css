@@ -402,7 +402,7 @@ ol {
     padding-top: 5px;
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: #777;
     transition: all linear .3s;
     text-decoration: none;
@@ -833,7 +833,7 @@ body > section:nth-child(3) {
     margin-bottom: 160px;
 }
 
-.form-row {
+.all-form {
     padding-top: 30px;
 }
 
