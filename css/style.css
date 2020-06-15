@@ -220,6 +220,7 @@ ol {
     line-height: 24px
 }
 
+
 /*About End*/
 
 /*Service Start*/
@@ -542,32 +543,86 @@ ol {
     padding-top: 10px;
 }
 
-.progress {
-    width: 100%;
-    height: 15px;
-}
-
-.progress-wrap {
-    background: #EA5539;
-    margin: 20px 0;
-    overflow: hidden;
+.progress-about ul li {
     position: relative;
-}
-
-.progress-wrap .progress-bar {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #07355A;
-}
-
-.progress-wrap p {
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 15px;
+    list-style: none;
+    margin: 15px 0;
+    text-transform: uppercase;
     color: #fff;
+    font-family: 'Roboto';
+    font-weight: 600px;
+    font-size: 14px;
 }
+
+.progress-about ul li:before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: #07355A;
+    z-index: -1;
+}
+
+.progress-about ul li:after {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    width: 0;
+    height: 16px;
+    background: #EA5539;
+    animation-duration: 4.0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    z-index: -1;
+
+}
+
+li.html5:after {
+    animation-name: html5;
+}
+
+@keyframes html5 {
+    to {
+        width: 90%;
+    }
+}
+
+
+li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 80%;
+    }
+}
+
+
+li.javascript:after {
+    animation-name: javascript;
+}
+
+@keyframes javascript {
+    to {
+        width: 60%;
+    }
+}
+
+li.php:after {
+    animation-name: php;
+}
+
+@keyframes php {
+    to {
+        width: 40%;
+    }
+}
+
+
 
 #tbp {
     background: url(../image/tbp.jpg);
